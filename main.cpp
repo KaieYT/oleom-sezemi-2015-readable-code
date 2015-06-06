@@ -16,6 +16,11 @@ int main(int argc, const char * argv[]) {
         recipe.push_back(str);
     }
 
+//引数が2以上ある場合
+    if(argc > 3){
+        int selectnum = argv[2];
+    }
+
 //recipeの最初から最後まで出力
     for(it = recipe.begin();it != recipe.end();it++){
         int recipenum = it-recipe.begin()+1;
