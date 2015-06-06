@@ -18,7 +18,8 @@ int main(int argc, const char * argv[]) {
 
 //recipeの最初から最後まで出力
     for(it = recipe.begin();it != recipe.end();it++){
-        cout << *it << endl;
+        int recipenum = it-recipe.begin()+1;
+        cout << recipenum << ": " << *it << endl;
     }
     
     return 0;
