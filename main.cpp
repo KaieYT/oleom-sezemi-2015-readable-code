@@ -10,9 +10,9 @@ int main(int argc, const char * argv[]) {
     vector<string> ::iterator it;
 
 //recipeにデータを読み出して入れる
-    ifstream recipes(argv[1]);
+    ifstream recipedata(argv[1]);
     string str;
-    while (getline(recipes,str)){
+    while (getline(recipedata,str)){
         recipe.push_back(str);
     }
 
